@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href={% static '../static/css/for_list_style.css' %}/>
+</head>
+<body>
+
+<header>
+    <div class="judo">柔道</div>
+    <nav class="four">
+        <ol>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'reg' %}">Sign in</a></li>
+            <li><a href="{% url 'list' %}">List</a></li>
+        </ol>
+    </nav>
+</header>
+
+<div class="main_block">
+    <div class="indoor_block">
+        <form>
+            <p>
+                <label for="lName" class="forms">Прізвище: </label>
+                <input type="text" id="lName" name="login"/>
+            </p>
+            <p>
+                <label for="fName" class="forms">Ім'я: </label>
+                <input type="text" id="fName" name="password"/>
+            </p>
+<!--            <p>-->
+<!--                <label for="mName" class="forms">По батькові: </label>-->
+<!--                <input type="text" id="mName" name="password"/>-->
+<!--            </p>-->
+<!--            <p>-->
+<!--                <label for="date">Дата народження: </label>-->
+<!--                <input type="date" id="date" name="date"/>-->
+<!--            </p>-->
+            <p>
+                <label for="email" class="forms">Електронна пошта: </label>
+                <input type="text" id="email" name="password"/>
+            </p>
+            <p>
+                <label for="password" class="forms">Пароль: </label>
+                <input type="password" id="password" name="password"/>
+            </p>
+            <p>
+                <label for="password" class="forms">Підтвердіть пароль: </label>
+                <input type="password" id="password" name="password"/>
+            </p>
+            <p>
+                <label for="phone" class="forms">Телефон: </label>
+                <input type="text" id="phone" name="password"/>
+            </p>
+<!--            <p>-->
+<!--                <label for="address" class="forms">Адреса: </label>-->
+<!--                <input type="text" id="address" name="password"/>-->
+<!--            </p>-->
+
+<!--            <div style="margin: 10px 0 15px 105px;">-->
+<!--                <label for="m" class="forms">Стать: </label>-->
+<!--                <input type="radio" value="m" name="gender"/>.M-->
+<!--                <input type="radio" value="m" name="gender"/>F-->
+<!--            </div>-->
+
+<!--            <div class="nifnif">-->
+<!--                <input type="checkbox" checked name="html5"/> Підтверджено-->
+<!--            </div>-->
+
+            <div class="nifnif">
+                <button class="button_reg" type="submit" >Туди</button>
+                <button class="button_reg" type="submit" >Сюди</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+
+
+<script src="js/block2.js"></script>
+</body>
+</html>

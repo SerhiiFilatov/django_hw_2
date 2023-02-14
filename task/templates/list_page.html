@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LIST</title>
+    <link rel="stylesheet" type="text/css" href={% static '../static/css/for_list_style.css' %}/>
+</head>
+
+<body>
+
+<header>
+    <div class="judo">柔道</div>
+    <nav class="four">
+        <ol>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'reg' %}">Sign in</a></li>
+            <li><a href="{% url 'list' %}">List</a></li>
+        </ol>
+    </nav>
+</header>
+
+<div class="main_block_list">
+
+<a href="{% url 'list' %}">Back </a>
+    <ul>
+        {% for i in object_list %}
+            <li id='{{ i.id }}'><a href="{% url 'det_list' i.id %}">{{ i.id }}</a></li>
+            <li>{{ i.created }}</li>
+        {% endfor %}
+    </ul>
+
+<p>{{ obj.id }}</p>
+<label for="completed">completed</label>
+{% if obj.completed %}
+<input id="completed" type="checkbox" checked value="Comp">
+    {% else %}
+    <input id="completed" type="checkbox" value='Comp'>
+{% endif %}
+</div>
+
+</body>
+</html>

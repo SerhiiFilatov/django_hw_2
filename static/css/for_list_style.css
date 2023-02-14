@@ -1,0 +1,197 @@
+
+
+@import "../nullstyle.css";
+
+body{
+    background: #16171b;
+    color: white;
+}
+
+/*----------------------------------------------MAIN MENU-------------------------------------------------------------*/
+
+header{
+    height: 100px;
+    background: #19191c;
+    border-bottom: 1px #494949 solid;
+    display: flex;
+}
+
+.judo{
+    width: 190px;
+    font-size: 500%;
+    margin-left: 100px;
+    margin-top: 13px;
+    color: #9B4222;
+}
+
+nav {
+    display: block;
+    margin-left: 50px;
+}
+
+ol {
+    list-style: none;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    transition: .5s linear;
+    font-size: 190%;
+}
+
+.four ol {
+    display: -webkit-flex;
+    display: flex;
+    padding-left: 0;
+}
+.four a {
+    margin-top: 6px;
+    padding: 1em;
+    display: block;
+    color: #9B4222;
+    border-right: 1px solid #19191c;
+    background: #19191c;
+}
+.four a:hover {
+    background: #bb432c;
+    color: #16171b;
+    border-radius: 9px;
+}
+
+/*------------------------------------------------------LOGIN------------------------------------------------------*/
+.main_block_log{
+    background: #1f1f23;
+    width: 300px;
+    height: 550px;
+    margin-top: 70px;
+    margin-left: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+img{
+    width: 160px;
+    height: 188px;
+    margin-top: 1px;
+    margin-left: 75px;
+    border-radius: 10px;
+}
+
+.p_log{
+    margin-top: 10px;
+    color: #bb432c;
+    text-align: center;
+    font-size: 29px;
+}
+
+input[type=log_email]{
+    margin-top: 40px;
+    margin-left: 10px;
+    background: #1f1f23;
+    color: grey;
+    width: 200px;
+    height: 40px;
+    border: 1px grey solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type=log_password]{
+    margin-top: 10px;
+    margin-left: 10px;
+    background: #1f1f23;
+    color: grey;
+    width: 200px;
+    height: 40px;
+    border: 1px grey solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button_log{
+    margin-top: 30px;
+    margin-left: 51px;
+    width: 206px;
+    height: 30px;
+    background: #bb432c;
+    border: 1px #bb432c solid;
+    border-radius: 5px;
+}
+
+/*------------------------------------------------------LIST----------------------------------------------------------*/
+
+.main_block_list{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    color: lightcoral;
+    font-size: 30px;
+    line-height: 44px;
+    border: 1px white dashed;
+}
+
+/*---------------------------------------------------REG FORM---------------------------------------------------------*/
+
+.main_block{
+    width: 1000px;
+    background-color: #16171b;
+    display: flex;
+    margin: auto;
+}
+
+.indoor_block {
+    width: 900px;
+    padding: 20px;
+    margin: 35px auto;
+    background-color: #16171b;
+    display: flex;
+}
+
+input[type=text], input[type=password] {
+    width: 530px;
+    padding: 5px;
+    margin: 10px 0 11px 0;
+    display: inline-block;
+    color: grey;
+    background: #16171b;
+    border: 1px grey solid;
+    border-radius: 5px;
+}
+
+label{
+    color: #bb432c;
+}
+
+input[type=date]{
+    width: 120px;
+    padding: 5px;
+    margin: 10px 0 11px 0;
+    margin-right: 580px;
+    display: inline-block;
+    border: none;
+    background: grey;
+    text-align:left;
+    border-radius: 5px;
+}
+
+p {
+    clear:both;
+    text-align:right;
+}
+
+.nifnif{
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+.button_reg{
+    width: 90px;
+    height: 30px;
+    background: #bb432c;
+    border: 1px #bb432c solid;
+    border-radius: 5px;
+}

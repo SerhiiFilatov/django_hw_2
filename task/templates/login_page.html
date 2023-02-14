@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href={% static '../static/css/for_list_style.css' %}/>
+
+</head>
+<body>
+
+<header>
+    <div class="judo">柔道</div>
+    <nav class="four">
+        <ol>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'reg' %}">Sign in</a></li>
+            <li><a href="{% url 'list' %}">List</a></li>
+        </ol>
+    </nav>
+</header>
+
+<div class="main_block_log">
+    <img src="{% static '../static/img/kano.jpg' %}" alt="Kano"/>
+    <div>
+        <form>
+            <p class="p_log">
+                <input type="log_email" id="email" name="login" placeholder="email"/>
+            </p>
+        </form>
+    </div>
+    <div>
+        <form>
+            <p class="p_log">
+                <input type="log_password" id="password" name="login" placeholder="password"/>
+            </p>
+        </form>
+    </div>
+    <div>
+        <form>
+            <button class="button_log" type="submit" formmethod="get" formaction="index.html">SIGN IN</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
